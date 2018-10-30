@@ -30,4 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Little Big Town
+  app_sub_Title: Small Ideas, Big Adventures
+
+  home:
+    home:
+      title: Little Big Town
+      welcome: Welcome to our web app
