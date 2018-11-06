@@ -31,5 +31,15 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :redirect
     assert_nil flash[:alert]
     assert_not_empty flash[:notice]
+
+      if email.blank?
+        flash[:alert] = I18n.t('home.request_contact.no_email')
+      else
+        containsMailer.contact_email(email, name, telephone, message).deliver_now
+        flash[:notice] = I18n.t('home.request_contact.email_sent')
+      end 
+
   end
+
+
 end
