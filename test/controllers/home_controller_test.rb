@@ -37,7 +37,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
       else
         containsMailer.contact_email(email, name, telephone, message).deliver_now
         flash[:notice] = I18n.t('home.request_contact.email_sent')
-      end 
+      end
 
   end
 
