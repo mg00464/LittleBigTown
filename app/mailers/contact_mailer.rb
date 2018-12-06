@@ -8,4 +8,9 @@ class ContactMailer < ApplicationMailer
   mail cc:
   @email end
 
+  def confirm(name)
+    @customerName = a
+    @introduction = "Thank you for your Query. We will be in touch with you shortly"
+    mail to: customer.email, subject: "Website Query"
+
 end
