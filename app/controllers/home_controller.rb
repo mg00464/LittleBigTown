@@ -5,6 +5,9 @@ class HomeController < ApplicationController
   def contact
   end
 
+  def admin
+  end
+
   def request_contact
     name = params[:name]
     email = params[:email]
@@ -25,4 +28,4 @@ class HomeController < ApplicationController
     redirect_to root_path
   end
 end
-end 
+end
