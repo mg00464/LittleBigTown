@@ -14,8 +14,8 @@ class BookingsTest < ApplicationSystemTestCase
     visit bookings_url
     click_on "New Booking"
 
-    fill_in "Description", with: @booking.description
-    fill_in "Title", with: @booking.title
+    fill_in "Additional", with: @booking.Additional
+    fill_in "Name", with: @booking.Name
     click_on "Create Booking"
 
     assert_text "Booking was successfully created"
@@ -26,8 +26,8 @@ class BookingsTest < ApplicationSystemTestCase
     visit bookings_url
     click_on "Edit", match: :first
 
-    fill_in "Description", with: @booking.description
-    fill_in "Title", with: @booking.title
+    fill_in "Additional", with: @booking.Additional
+    fill_in "Name", with: @booking.Name
     click_on "Update Booking"
 
     assert_text "Booking was successfully updated"

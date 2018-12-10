@@ -1,9 +1,10 @@
 %h1 Listing bookings
+
 %table
   %thead
     %tr
-      %th Title
-      %th Description
+      %th Name
+      %th Additional
       %th
       %th
       %th
@@ -11,8 +12,8 @@
   %tbody
     - @bookings.each do |booking|
       %tr
-        %td= booking.title
-        %td= booking.description
+        %td= booking.Name
+        %td= booking.Additional
         %td= link_to 'Show', booking
         %td= link_to 'Edit', edit_booking_path(booking)
         %td= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' }

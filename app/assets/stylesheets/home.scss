@@ -6,3 +6,78 @@ form label, form input {
 display: block;
 margin: 10px;
 }
+$font: 'Times New Roman', 'Times', serif;
+$color: #C4D048;
+body {
+  font-family: $font;
+  background-color: $color !important;
+  margin: 10px;
+  padding: 10px;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-size:10vw;
+  font-weight: bold;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+            font-size: 25px;
+}
+
+p {
+  font-size: 15px;
+}
+
+//height auto resizes image based on window size proportionally.
+// img {
+//    width: 40%;
+//    height: auto;
+//    border-radius: 50%;
+//    border: 1px solid #ddd;
+//    padding: 5px;
+//    box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+//  }
+
+.logoRotate{
+  transform: rotate(-7deg);
+}
+
+.logoFront{
+  width:90%;
+  box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+
+.giraffe{
+  width:60%;
+  padding-right: 30pt;
+  position: absolute;
+  left:25%;
+}
+
+.container-fluid{
+   padding-top: 25pt;
+ }
+
+ // .img-thumbnail{
+ //   box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+ //   width:70%;
+ // }
+
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+ font-size: 40px;
+ color: #F25938;
+}
