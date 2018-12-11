@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @customer_booking.name
+%p
+  %b Email:
+  = @customer_booking.email
+%p
+  %b Children:
+  = @customer_booking.children
+%p
+  %b Phonenumber:
+  = @customer_booking.phoneNumber
+
+= link_to 'Edit', edit_customer_booking_path(@customer_booking)
+\|
+= link_to 'Back', customer_bookings_path

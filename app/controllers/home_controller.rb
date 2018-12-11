@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  
+
   def home
   end
 
@@ -10,6 +12,7 @@ class HomeController < ApplicationController
 
   def about
   end
+
 
   def request_contact
     name = params[:name]

@@ -17,8 +17,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible"/>
     <title>
       <%= t('app_title') %>
-    </title>
-    
+    </title
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -28,8 +27,9 @@
   <body></body>
 </html>
 <% if signed_in? %>
-  Signed in as: #{current_user.email}
-  \#{button_to 'Sign out', sign_out_path, method: :delete}
+  currently signed in: 
+    <%= link_to 'Sign out', sign_out_path, method: :delete %>
+
 <% end %>
 <% # - else %>
 <% #   = link_to 'Sign in', sign_in_path %>

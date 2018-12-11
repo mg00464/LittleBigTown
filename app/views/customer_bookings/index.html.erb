@@ -1,0 +1,43 @@
+<h1>Customer Bookings</h1>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Children</th>
+      <th>Phonenumber</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customer_bookings.each do |customer_booking| %>
+      <tr>
+        <td>
+          <%= customer_booking.name %>
+        </td>
+        <td>
+          <%= customer_booking.email %>
+        </td>
+        <td>
+          <%= customer_booking.children %>
+        </td>
+        <td>
+          <%= customer_booking.phoneNumber %>
+        </td>
+        <td>
+          <%= link_to 'Show', customer_booking %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_customer_booking_path(customer_booking) %>
+        </td>
+        <td>
+          <%= link_to 'Destroy', customer_booking, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br/>
+<%= link_to 'New Customer booking', new_customer_booking_path %>

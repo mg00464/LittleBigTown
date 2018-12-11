@@ -1,0 +1,40 @@
+<%= form_for @customer_booking do |f| %>
+  <% if @customer_booking.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= "#{pluralize(@customer_booking.errors.count, "error")} prohibited this customer_booking from being saved:" %>
+      </h2>
+      <ul>
+        <% @customer_booking.errors.full_messages.each do |message| %>
+          <li>
+            <%= message %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container-fluid">
+  <center>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :children %>
+    <%= f.number_field :children %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneNumber %>
+    <%= f.number_field :phoneNumber %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Save' %>
+  </div>
+</center>
+</div>
+<% end %>
