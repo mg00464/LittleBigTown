@@ -5,17 +5,18 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get :home_home_url
     assert_response :success
 
+
+  end
+
+  test "correct title" do
     assert_select 'title', 'Little Big Town'
-    assert_select 'h1', 'welcome to my web app'
+    assert_select 'h1', 'Welcome to our web app'
+
   end
 
   test "should get contact" do
     get :contact
     assert_response :success
-    assert_template layout: 'application'
-    assert_select 'title', 'My Notes'
-    assert_select 'h1', 'Contact Us'
-    assert_select 'p', 'Complete the following form to get in touch with us.'
   end
   test "should post request contact but no email" do
     post :request_contact

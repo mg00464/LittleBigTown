@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :customer_bookings
-  resources :bookings
   root 'home#home'
   get 'contact', to: 'home#contact'
   get 'about', to: 'home#about'
