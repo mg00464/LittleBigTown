@@ -5,8 +5,8 @@ class CustomerBookingsControllerTest < ActionDispatch::IntegrationTest
     @customer_booking = customer_bookings(:one)
   end
 
-  test "should get index" do
-    get customer_bookings_url
+  test "should get login" do
+    get sign_in_url
     assert_response :success
   end
 
