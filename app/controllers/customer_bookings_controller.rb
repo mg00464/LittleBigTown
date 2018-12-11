@@ -1,6 +1,6 @@
 class CustomerBookingsController < ApplicationController
   before_action :set_customer_booking, only: [:show, :edit, :update, :destroy]
-    
+  before_action :require_login, only: [:index]
   # GET /customer_bookings
   # GET /customer_bookings.json
   def index

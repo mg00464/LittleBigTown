@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  
+  before_action :require_login, only: [:admin]
 
   def home
   end
