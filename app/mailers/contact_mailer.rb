@@ -14,3 +14,4 @@ class ContactMailer < ApplicationMailer
     mail to: customer.email, subject: "Website Query"
 
 end
+end  
