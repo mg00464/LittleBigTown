@@ -1,13 +1,9 @@
 class HomeController < ApplicationController
-  before_action :require_login, only: [:admin]
 
   def home
   end
 
   def contact
-  end
-
-  def admin
   end
 
   def about

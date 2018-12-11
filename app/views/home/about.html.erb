@@ -1,65 +1,58 @@
-
 <div class="container-fluid" >
-         <div class="text-center">
-             <h2 style="font-size: 50px">Our Story</h2>
-          </div>
-<div class="row">
-  <div class="col-sm-8" >
-
-
-<!-- locale text -->
-        <h4>
-  <%= t('.welcome') %>
-</h4>
-
-  <br>
-    <p>  <%= t('.moreText') %></p>
-  </div>
-  <div class="col-sm-4" style="padding-top: 22px;">
-          <img src="assets/Child1.jpg" class="img-thumbnail" alt="Family" style="width:100%;box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);">
+   <div class="text-center">
+      <h2 style="font-size: 50px">Our Story</h2>
+   </div>
+   <div class="row">
+      <div class="col-sm-8" >
+         <!-- locale text -->
+         <h4>
+            <%= t('.welcome') %>
+         </h4>
+         <br>
+         <p>  <%= t('.moreText') %></p>
       </div>
+      <div class="col-sm-4" style="padding-top: 22px;">
+         <img src="assets/Child1.jpg" class="img-thumbnail" alt="Family" style="width:100%;box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);">
+      </div>
+   </div>
 </div>
-     </div>
-
-
-     <div class="container-fluid text-center" style="background-color: #FFFF00; padding-top: 25pt;">
-<h2>SERVICES</h2>
-<h4>What we offer</h4>
-<br>
-<div class="row">
-<div class="col-sm-4">
-<i class="far fa-clock fa-5x"></i>
-   <h3>90 Minutes</h3>
- <p>Our play sessions last for 1.5 hours!</p>
-</div>
-<div class="col-sm-4">
- <i class="fa fa-coffee fa-5x"></i>
- <h3>Cafe</h3>
- <p>We have an on-site cafe selling tea, coffee cake and delicious hot chocolate.</p>
-</div>
-<div class="col-sm-4">
-<i class="fa fa-lock fa-5x"></i>
-
- <h3>Secure</h3>
- <p>Book a play session online today!</p>
-</div>
-</div>
-<br><br>
-<div class="row">
-<div class="col-sm-4">
- <i class="fa fa-wheelchair fa-5x"></i>
- <h3>Accessibility </h3>
- <p>Disability-friendly toilets</p>
-</div>
-<div class="col-sm-4">
- <i class="fa fa-birthday-cake fa-5x"></i>
- <h3>Parties</h3>
- <p>We cater for childrens Parties.<br/> Check out our party packages.</p>
-</div>
-<div class="col-sm-4">
- <i class="fas fa-bus fa-5x"></i>
- <h3>Play</h3>
- <p>With 6 themed play zones to choose from, there is endless fun!</p>
-</div>
-</div>
+<div class="container-fluid text-center" style="background-color: #FFFF00; padding-top: 25pt;">
+   <h2><%= t('.services')%></h2>
+   <h4><%= t('.servicesDescription')%></h4>
+   <br>
+   <div class="row">
+      <div class="col-sm-4">
+         <i class="far fa-clock fa-5x"></i>
+         <h3><%= t('.time')%></h3>
+         <p><%= t('.timeDescription')%></p>
+      </div>
+      <div class="col-sm-4">
+         <i class="fa fa-coffee fa-5x"></i>
+         <h3><%= t('.Cafe')%></h3>
+         <p><%= t('.cafeDescription')%></p>
+      </div>
+      <div class="col-sm-4">
+         <i class="fa fa-lock fa-5x"></i>
+         <h3><%= t('.secure')%></h3>
+         <p><%= t('.secureDescription')%></p>
+      </div>
+   </div>
+   <br><br>
+   <div class="row">
+      <div class="col-sm-4">
+         <i class="fa fa-wheelchair fa-5x"></i>
+         <h3><%= t('.accessibility')%></h3>
+         <p><%= t('.accessibilityDescription')%></p>
+      </div>
+      <div class="col-sm-4">
+         <i class="fa fa-birthday-cake fa-5x"></i>
+         <h3><%= t('.parties')%></h3>
+         <p><%= t('.partiesDescription')%><br/> <%= t('.PartyPackages')%></p>
+      </div>
+      <div class="col-sm-4">
+         <i class="fas fa-bus fa-5x"></i>
+         <h3><%= t('.play')%></h3>
+         <p><%= t('.playDescription')%></p>
+      </div>
+   </div>
 </div>
