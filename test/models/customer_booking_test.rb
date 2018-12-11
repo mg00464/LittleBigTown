@@ -9,4 +9,14 @@ class CustomerBookingTest < ActiveSupport::TestCase
     refute booking.valid?
   end
 
+  test 'Should save valid booking' do
+    booking = CustomerBooking.new
+    booking.name = "Matt"
+    booking.phoneNumber = "0123456789"
+    booking.email = "Test@test.com"
+    booking.children = "0"
+
+    booking.save
+    assert booking.valid?
+  end
 end
